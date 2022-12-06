@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Alteration Hunting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+  body {font-size: 16px;}
+  img {margin-bottom: -8px;}
+  .mySlides {display: none;}
+  /* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+  </style>
+  <body class="w3-content w3-light-grey" style="max-width:1500px;">
+
+  </head>
+
+  <div id="container" class="w3-display-container w3-center">
+      <h1 class="w3-jumbo w3-center"><b>ALTERATION HUNT</b></h1>
+
+    <div id="warning" hidden=true></div>
+
+    <div id="player"></div>
+
+    <section>
+      <a class="w3-hover-text-blue" href="https://github.com/Unity-Technologies/UnityRenderStreaming/tree/develop/WebApp/public/receiver"
+        title="View source for this page on GitHub" id="viewSource">View source on GitHub</a>
+    </section>
+</div>
+  <div class="w3-row-padding">
+    <div class="w3-col l8 m6">
+      <h1 class="w3-xxxlarge"><b>Input controls</b></h1>
+      <h1 class="w3-xxlarge w3-text-red"><b>Use the keyboard and mouse</b>  
+      <h1 class="w3-xxlarge w3-text-red"><b>Use a touchscreen</b>
+
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="https://unpkg.com/event-target@latest/min.js"></script>
+  <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.global.js"></script>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>
