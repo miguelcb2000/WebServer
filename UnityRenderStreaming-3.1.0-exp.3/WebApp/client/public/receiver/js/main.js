@@ -66,11 +66,11 @@ function onClickPlayButton() {
   playerDiv.appendChild(elementFullscreenButton);
   elementFullscreenButton.addEventListener("click", function () {
     if (!document.fullscreenElement || !document.webkitFullscreenElement) {
-      if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen();
+      if (playerDiv.requestFullscreen) {//document.documentElement
+        playerDiv.requestFullscreen();//document.documentElement
       }
-      else if (document.documentElement.webkitRequestFullscreen) {
-        document.documentElement.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+      else if (playerDiv.webkitRequestFullscreen) { //document.documentElement
+        playerDiv.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);//document.documentElement
       } else {
         if (playerDiv.style.position == "absolute") {
           playerDiv.style.position = "relative";
